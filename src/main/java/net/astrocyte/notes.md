@@ -52,4 +52,19 @@ numbers.forEach( (n) -> { System.out.println(n); } );\
 
 **Checklist for adding items**
 
-1. 
+1. Created DeferredRegister to store item lambda functions (only need to do this once, at least for now).
+2. Add a new registry object to the deferred register.
+3. Accept that registry object into a creative mode tab. E.g., "Ingredients".
+4. Create textures in assets folder.
+
+**Assets folder and JSON files**
+
+* In the context of a Minecraft assets folder, JSON (JavaScript Object Notation) files act as the instruction manuals for the game's visuals and sounds. 
+* While your Java code defines the logic (what a block does, how much damage a sword deals), the assets folder is entirely client-side, meaning it handles only what the player sees and hears. 
+* The JSON files inside don't contain image data themselves; instead, they tell Minecraft which textures to use, how to shape them, and when to display them.
+
+**Checklist for adding blocks**
+
+* This is a bit more complex.
+* When you add a block into the game, you also need to do everything that you would do for an item.
+* 

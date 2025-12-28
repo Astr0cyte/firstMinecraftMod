@@ -1,6 +1,7 @@
 package net.astrocyte.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.astrocyte.tutorialmod.block.ModBlocks;
 import net.astrocyte.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,7 @@ public class TutorialMod {
 
         //Calling 'register' method from ModItems. --- Does this register the ModItems class?
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,6 +52,10 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){ //If the player is in the ingredients tab, Topaz is added!
             event.accept(ModItems.UNREFINED_TOPAZ);
             event.accept(ModItems.TOPAZ);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.TOPAZ_BLOCK);
         }
     }
 

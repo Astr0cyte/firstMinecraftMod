@@ -1,4 +1,6 @@
 {
   "item.tutorialmod.topaz": "Topaz",
-  "item.tutorialmod.unrefinedtopaz": "Unrefined Topaz"
+  "item.tutorialmod.unrefinedtopaz": "Unrefined Topaz",
+
+  "block.tutorialmod.topaz_block": "Block of Topaz"
 }
