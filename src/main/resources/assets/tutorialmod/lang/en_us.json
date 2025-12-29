@@ -2,5 +2,9 @@
   "item.tutorialmod.topaz": "Topaz",
   "item.tutorialmod.unrefinedtopaz": "Unrefined Topaz",
 
-  "block.tutorialmod.topaz_block": "Block of Topaz"
+  "block.tutorialmod.topaz_block": "Block of Topaz",
+  "block.tutorialmod.raw_topaz_block": "Block of Raw Topaz",
+
+  "creativetab.tutorialmod.topaz_items": "Topaz Items",
+  "creativetab.tutorialmod.topaz_blocks": "Topaz Blocks"
 }

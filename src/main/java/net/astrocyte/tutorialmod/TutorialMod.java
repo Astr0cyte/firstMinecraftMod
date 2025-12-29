@@ -2,6 +2,7 @@ package net.astrocyte.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.astrocyte.tutorialmod.block.ModBlocks;
+import net.astrocyte.tutorialmod.item.ModCreativeModeTabs;
 import net.astrocyte.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,8 @@ public class TutorialMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         //Calling 'register' method from ModItems. --- Does this register the ModItems class?
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -56,6 +59,7 @@ public class TutorialMod {
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.TOPAZ_BLOCK);
+            event.accept(ModBlocks.RAW_TOPAZ_BLOCK);
         }
     }
 
