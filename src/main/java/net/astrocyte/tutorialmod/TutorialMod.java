@@ -61,6 +61,10 @@ public class TutorialMod {
             event.accept(ModBlocks.TOPAZ_BLOCK);
             event.accept(ModBlocks.RAW_TOPAZ_BLOCK);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.TOPAZ_ORE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

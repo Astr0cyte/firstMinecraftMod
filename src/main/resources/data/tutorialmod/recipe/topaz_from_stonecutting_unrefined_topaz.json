@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "tutorialmod:unrefined_topaz"
+  },
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:topaz"
+  }
+}

@@ -29,6 +29,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.BASALT)));
 
+    public static final RegistryObject<Block> TOPAZ_ORE_BLOCK = registerBlock("topaz_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     // Helper functions for registering blocks:
 
     /**

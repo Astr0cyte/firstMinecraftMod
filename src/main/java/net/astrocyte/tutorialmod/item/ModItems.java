@@ -22,7 +22,7 @@ public class ModItems {
         // This stuff is done via: resources > assets
 
     //Adding a second item from my own memory.
-    public static final RegistryObject<Item> UNREFINED_TOPAZ = ITEMS.register("unrefinedtopaz",
+    public static final RegistryObject<Item> UNREFINED_TOPAZ = ITEMS.register("unrefined_topaz",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus bus) {

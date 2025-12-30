@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.TOPAZ_BLOCK.get());
                         output.accept(ModBlocks.RAW_TOPAZ_BLOCK.get());
+                        output.accept(ModBlocks.TOPAZ_ORE_BLOCK.get());
 
                     }).build());
 
