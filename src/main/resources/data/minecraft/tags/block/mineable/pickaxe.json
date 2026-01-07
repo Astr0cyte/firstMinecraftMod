@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:topaz_block",
+    "tutorialmod:deepslate_topaz_ore_block",
+    "tutorialmod:raw_topaz_block",
+    "tutorialmod:topaz_ore_block"
+  ]
+}

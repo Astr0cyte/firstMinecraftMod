@@ -31,6 +31,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TOPAZ_BLOCK.get());
                         output.accept(ModBlocks.RAW_TOPAZ_BLOCK.get());
                         output.accept(ModBlocks.TOPAZ_ORE_BLOCK.get());
+                        output.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK.get());
 
                     }).build());
 

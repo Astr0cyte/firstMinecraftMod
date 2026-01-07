@@ -64,6 +64,7 @@ public class TutorialMod {
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.TOPAZ_ORE_BLOCK);
+            event.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK);
         }
     }
 
