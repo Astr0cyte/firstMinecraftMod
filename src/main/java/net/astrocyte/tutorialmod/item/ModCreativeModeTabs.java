@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.TOPAZ.get());
                         output.accept(ModItems.UNREFINED_TOPAZ.get());
+                        output.accept(ModItems.TOPAZ_SWORD.get());
 
                     }).build());
 

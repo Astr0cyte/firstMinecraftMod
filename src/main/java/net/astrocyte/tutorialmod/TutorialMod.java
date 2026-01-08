@@ -35,7 +35,9 @@ public class TutorialMod {
 
         ModCreativeModeTabs.register(modEventBus);
 
-        //Calling 'register' method from ModItems. --- Does this register the ModItems class?
+        //Calling 'register' method from ModItems.
+        //"Passing the sticky note to the bouncer with extra names to get into the club" (where the existing names on the clipboard are all the vanilla items).
+        //The sticky note has the modded items.
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -65,6 +67,10 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.TOPAZ_ORE_BLOCK);
             event.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.TOPAZ_SWORD);
         }
     }
 

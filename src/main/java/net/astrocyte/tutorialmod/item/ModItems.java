@@ -2,6 +2,7 @@ package net.astrocyte.tutorialmod.item;
 
 import net.astrocyte.tutorialmod.TutorialMod;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,6 +25,15 @@ public class ModItems {
     //Adding a second item from my own memory.
     public static final RegistryObject<Item> UNREFINED_TOPAZ = ITEMS.register("unrefined_topaz",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<SwordItem> TOPAZ_SWORD = ITEMS.register("topaz_sword",
+            () -> new SwordItem(
+                    ModTiers.TOPAZ,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.TOPAZ, 3, -2.4f))));
+
+    // new SwordItem(Tiers.DIAMOND, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.DIAMOND, 3, -2.4F)))
+
+    //new SwordItem(Tiers.NETHERITE, new Item.Properties().fireResistant().attributes(SwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)))
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
