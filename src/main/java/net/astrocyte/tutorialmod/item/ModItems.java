@@ -1,6 +1,7 @@
 package net.astrocyte.tutorialmod.item;
 
 import net.astrocyte.tutorialmod.TutorialMod;
+import net.astrocyte.tutorialmod.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,9 +32,8 @@ public class ModItems {
                     ModTiers.TOPAZ,
                     new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.TOPAZ, 3, -2.4f))));
 
-    // new SwordItem(Tiers.DIAMOND, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.DIAMOND, 3, -2.4F)))
-
-    //new SwordItem(Tiers.NETHERITE, new Item.Properties().fireResistant().attributes(SwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)))
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(40)));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
