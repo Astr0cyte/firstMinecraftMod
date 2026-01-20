@@ -73,6 +73,10 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.TOPAZ_SWORD);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.GLIZZY);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -38,6 +38,16 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> CUSTOM_FOOD_TAB = CREATIVE_MODE_TABS.register("custom_food_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.GLIZZY.get()))
+                    .title(Component.translatable("creativetab.tutorialmod.food_items"))
+                    .withTabsBefore(TOPAZ_BLOCKS_TAB.getId())
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.GLIZZY.get());
+
+                    }).build());
+
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
     }

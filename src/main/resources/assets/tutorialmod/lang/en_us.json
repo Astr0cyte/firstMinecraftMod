@@ -1,8 +1,10 @@
 {
   "item.tutorialmod.topaz": "Topaz",
   "item.tutorialmod.unrefined_topaz": "Unrefined Topaz",
+
   "item.tutorialmod.topaz_sword": "Topaz Sword",
   "item.tutorialmod.chisel": "Chisel",
+  "item.tutorialmod.glizzy": "Glizzy",
 
   "block.tutorialmod.topaz_block": "Block of Topaz",
   "block.tutorialmod.raw_topaz_block": "Block of Raw Topaz",
@@ -11,5 +13,8 @@
   "block.tutorialmod.pulsar_lantern": "Pulsar Lantern",
 
   "creativetab.tutorialmod.topaz_items": "Topaz Items",
-  "creativetab.tutorialmod.topaz_blocks": "Topaz Blocks"
+  "creativetab.tutorialmod.topaz_blocks": "Topaz Blocks",
+  "creativetab.tutorialmod.food_items": "Custom Food",
+
+  "tooltip.tutorialmod.glizzy": "Mmm... Sosidge"
 }
