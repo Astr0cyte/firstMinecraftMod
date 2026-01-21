@@ -1,10 +1,15 @@
 package net.astrocyte.tutorialmod.block;
 
 import net.astrocyte.tutorialmod.TutorialMod;
+import net.astrocyte.tutorialmod.block.custom.TransmogrifierBlock;
 import net.astrocyte.tutorialmod.item.ModItems;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -15,6 +20,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -43,6 +49,17 @@ public class ModBlocks {
     public static final RegistryObject<LanternBlock> PULSAR_LANTERN = registerBlock("pulsar_lantern",
             () -> new LanternBlock(BlockBehaviour.Properties.of()
                     .strength(4f).sound(SoundType.LANTERN)));
+
+    public static final RegistryObject<Block> TRANSMOGRIFIER_BLOCK = registerBlock("transmogrifier_block",
+            () -> new TransmogrifierBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()) {
+                @Override
+                public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.transmogrifier_block")
+                            .withStyle(ChatFormatting.DARK_RED)
+                            .withStyle(ChatFormatting.ITALIC));
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
     // Helper functions for registering blocks:
 

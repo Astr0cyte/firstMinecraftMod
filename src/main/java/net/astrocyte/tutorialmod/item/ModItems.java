@@ -36,7 +36,15 @@ public class ModItems {
     public static final RegistryObject<SwordItem> TOPAZ_SWORD = ITEMS.register("topaz_sword",
             () -> new SwordItem(
                     ModTiers.TOPAZ,
-                    new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.TOPAZ, 3, -2.4f))));
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.TOPAZ, 3, -2.0f))){
+                @Override
+                public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.topaz_sword")
+                            .withStyle(ChatFormatting.GOLD)
+                            .withStyle(ChatFormatting.ITALIC));
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(40)));

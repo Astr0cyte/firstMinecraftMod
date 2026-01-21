@@ -11,10 +11,14 @@
   "block.tutorialmod.topaz_ore_block": "Topaz Ore",
   "block.tutorialmod.deepslate_topaz_ore_block": "Deepslate Topaz Ore",
   "block.tutorialmod.pulsar_lantern": "Pulsar Lantern",
+  "block.tutorialmod.transmogrifier_block": "Transmogrifier Block",
 
   "creativetab.tutorialmod.topaz_items": "Topaz Items",
   "creativetab.tutorialmod.topaz_blocks": "Topaz Blocks",
   "creativetab.tutorialmod.food_items": "Custom Food",
+  "creativetab.tutorialmod.misc_custom_blocks": "Misc Custom Blocks",
 
-  "tooltip.tutorialmod.glizzy": "Mmm... Sosidge"
+  "tooltip.tutorialmod.topaz_sword": "This sword is incredibly light!",
+  "tooltip.tutorialmod.glizzy": "Mmm... Sosidge",
+  "tooltip.tutorialmod.transmogrifier_block": "Transforms a specific item!"
 }

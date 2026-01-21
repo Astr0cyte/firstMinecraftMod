@@ -48,6 +48,16 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> MISC_CUSTOM_BLOCKS = CREATIVE_MODE_TABS.register("misc_custom_blocks",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.TRANSMOGRIFIER_BLOCK.get()))
+                    .title(Component.translatable("creativetab.tutorialmod.misc_custom_blocks"))
+                    .withTabsBefore(CUSTOM_FOOD_TAB.getId())
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.TRANSMOGRIFIER_BLOCK.get());
+
+                   }).build());
+
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
     }
