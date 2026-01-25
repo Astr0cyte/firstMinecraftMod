@@ -1,4 +1,57 @@
 package net.astrocyte.tutorialmod.datagen;
 
-public class ModRecipeProvider {
+import net.astrocyte.tutorialmod.TutorialMod;
+import net.astrocyte.tutorialmod.block.ModBlocks;
+import net.astrocyte.tutorialmod.item.ModItems;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+    public ModRecipeProvider(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pRegistries) {
+        super(pOutput, pRegistries);
+    }
+
+    @Override
+    protected void buildRecipes(RecipeOutput pRecipeOutput){
+        List<ItemLike> TOPAZ_STONECUTTABLE = List.of(ModItems.UNREFINED_TOPAZ.get());
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TOPAZ_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.TOPAZ.get())
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_SWORD.get())
+                .pattern("X")
+                .pattern("X")
+                .pattern("#")
+                .define('X', ModItems.TOPAZ.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOPAZ.get(), 9)
+                .requires(ModBlocks.TOPAZ_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.TOPAZ_BLOCK.get()), has(ModBlocks.TOPAZ_BLOCK.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOPAZ.get(), 6)
+                .requires(ModBlocks.RAW_TOPAZ_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_TOPAZ_BLOCK.get()), has(ModBlocks.RAW_TOPAZ_BLOCK.get()))
+                .save(pRecipeOutput, TutorialMod.MOD_ID + ":topaz_from_raw_topaz_block");
+
+        /* YOU ARE HERE
+                stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, TOPAZ_STONECUTTABLE, );
+
+         */
+    }
 }
