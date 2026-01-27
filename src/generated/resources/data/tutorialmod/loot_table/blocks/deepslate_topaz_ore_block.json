@@ -46,6 +46,12 @@
                   "function": "minecraft:apply_bonus"
                 },
                 {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "max": 4.0
+                  }
+                },
+                {
                   "function": "minecraft:explosion_decay"
                 }
               ],
