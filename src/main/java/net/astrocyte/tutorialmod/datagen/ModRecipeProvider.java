@@ -21,9 +21,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput){
-        List<ItemLike> TOPAZ_STONECUTTABLE = List.of(ModItems.UNREFINED_TOPAZ.get());
-
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TOPAZ_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
@@ -49,9 +46,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RAW_TOPAZ_BLOCK.get()), has(ModBlocks.RAW_TOPAZ_BLOCK.get()))
                 .save(pRecipeOutput, TutorialMod.MOD_ID + ":topaz_from_raw_topaz_block");
 
-        /* YOU ARE HERE
-                stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, TOPAZ_STONECUTTABLE, );
-
-         */
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.UNREFINED_TOPAZ.get()), RecipeCategory.MISC, ModItems.TOPAZ.get(), 1)
+                .unlockedBy(getHasName(ModItems.UNREFINED_TOPAZ.get()), has(ModItems.UNREFINED_TOPAZ.get()))
+                .save(pRecipeOutput, TutorialMod.MOD_ID + ":topaz_from_stonecutting_unrefined_topaz");
     }
 }
