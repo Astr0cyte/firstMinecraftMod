@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorialmod:block/radiant_topaz_block"
+    }
+  }
+}

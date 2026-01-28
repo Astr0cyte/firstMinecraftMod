@@ -11,7 +11,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -46,9 +45,10 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-    public static final RegistryObject<LanternBlock> PULSAR_LANTERN = registerBlock("pulsar_lantern",
-            () -> new LanternBlock(BlockBehaviour.Properties.of()
-                    .strength(4f).sound(SoundType.LANTERN)));
+    public static final RegistryObject<Block> RADIANT_TOPAZ_BLOCK = registerBlock("radiant_topaz_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).sound(SoundType.SHROOMLIGHT)
+                    .lightLevel(state -> 15)));
 
     public static final RegistryObject<Block> TRANSMOGRIFIER_BLOCK = registerBlock("transmogrifier_block",
             () -> new TransmogrifierBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()) {

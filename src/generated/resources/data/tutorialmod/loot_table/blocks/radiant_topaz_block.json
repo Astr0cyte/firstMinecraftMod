@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorialmod:pulsar_lantern"
+          "name": "tutorialmod:radiant_topaz_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "tutorialmod:blocks/pulsar_lantern"
+  "random_sequence": "tutorialmod:blocks/radiant_topaz_block"
 }

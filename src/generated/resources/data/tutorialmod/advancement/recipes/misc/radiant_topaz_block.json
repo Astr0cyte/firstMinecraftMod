@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_glowstone_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:glowstone_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:radiant_topaz_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_topaz": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:topaz"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_topaz",
+      "has_glowstone_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:radiant_topaz_block"
+    ]
+  }
+}

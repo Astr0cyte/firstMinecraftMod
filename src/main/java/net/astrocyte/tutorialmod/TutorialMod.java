@@ -62,7 +62,7 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.TOPAZ_BLOCK);
             event.accept(ModBlocks.RAW_TOPAZ_BLOCK);
-            event.accept(ModBlocks.PULSAR_LANTERN);
+            event.accept(ModBlocks.RADIANT_TOPAZ_BLOCK);
             event.accept(ModBlocks.TRANSMOGRIFIER_BLOCK);
         }
 

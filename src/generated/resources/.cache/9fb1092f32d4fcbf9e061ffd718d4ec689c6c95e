@@ -1,9 +1,13 @@
-// 1.21	2026-01-27T17:35:33.6813604	Recipes
+// 1.21	2026-01-28T21:30:54.8513444	Recipes
 f87b157ece589feb9449973e7b016b45b6baa244 data/tutorialmod/advancement/recipes/combat/topaz_sword.json
+8fec1b6c89cac5de5a6c5eadc82f753ad687ddc4 data/tutorialmod/advancement/recipes/misc/radiant_topaz_block.json
 d24c14a27ee3e6e9217affa08dd751abc4e91876 data/tutorialmod/advancement/recipes/misc/topaz.json
 2466186965131a453488ad49ed07b74ac5b7745c data/tutorialmod/advancement/recipes/misc/topaz_block.json
 24b4b218708103dd7043c09191642ab0fe202480 data/tutorialmod/advancement/recipes/misc/topaz_from_raw_topaz_block.json
 8b376f948e66aa41bbb087c151adacf762a27599 data/tutorialmod/advancement/recipes/misc/topaz_from_stonecutting_unrefined_topaz.json
+bf7583f5cd4ff08a7adeab33a48d78e0ff650d03 data/tutorialmod/advancement/recipes/tools/chisel.json
+0652ffa062dbd581775eba13284ba1829b705b04 data/tutorialmod/recipe/chisel.json
+ec5d50f29ef21099b8e82c99a9501c25cfc5955a data/tutorialmod/recipe/radiant_topaz_block.json
 968c1dba8136582a3dc3db4ea0c2cfdc4472dcc2 data/tutorialmod/recipe/topaz.json
 7e78bab2473582593b7dda25774a72a725a78a02 data/tutorialmod/recipe/topaz_block.json
 b5d2b61c79d43aa70e556be735add44bac43f1cc data/tutorialmod/recipe/topaz_from_raw_topaz_block.json

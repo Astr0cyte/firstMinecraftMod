@@ -25,7 +25,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.TOPAZ_ORE_BLOCK.get())
                 .add(ModBlocks.TRANSMOGRIFIER_BLOCK.get());
 
-        tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.TRANSMOGRIFIER_BLOCK.get());
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.TRANSMOGRIFIER_BLOCK.get())
+                .add(ModBlocks.RADIANT_TOPAZ_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TOPAZ_ORE_BLOCK.get())

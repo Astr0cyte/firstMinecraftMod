@@ -37,6 +37,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RADIANT_TOPAZ_BLOCK.get())
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .define('X', ModItems.TOPAZ.get())
+                .define('#', Items.GLOWSTONE_DUST)
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
+                .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CHISEL.get())
+                .pattern(" ")
+                .pattern("X")
+                .pattern("#")
+                .define('X', ModItems.TOPAZ.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOPAZ.get(), 9)
                 .requires(ModBlocks.TOPAZ_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.TOPAZ_BLOCK.get()), has(ModBlocks.TOPAZ_BLOCK.get())).save(pRecipeOutput);

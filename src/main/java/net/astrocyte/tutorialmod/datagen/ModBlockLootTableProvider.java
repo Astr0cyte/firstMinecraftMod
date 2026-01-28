@@ -7,14 +7,12 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.IntRange;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.LimitCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
@@ -33,7 +31,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.TOPAZ_BLOCK.get());
         dropSelf(ModBlocks.RAW_TOPAZ_BLOCK.get());
         dropSelf(ModBlocks.TRANSMOGRIFIER_BLOCK.get());
-        dropSelf(ModBlocks.PULSAR_LANTERN.get());
+        dropSelf(ModBlocks.RADIANT_TOPAZ_BLOCK.get());
 
         this.add(ModBlocks.TOPAZ_ORE_BLOCK.get(),
                 block -> createOreDrop(ModBlocks.TOPAZ_ORE_BLOCK.get(), ModItems.UNREFINED_TOPAZ.get()));
