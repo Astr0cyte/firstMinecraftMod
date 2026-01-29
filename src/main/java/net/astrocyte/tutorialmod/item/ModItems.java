@@ -60,6 +60,9 @@ public class ModItems {
                 }
             });
 
+    public static final RegistryObject<Item> PULSAR_QUARTZ = ITEMS.register("pulsar_quartz",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
     }

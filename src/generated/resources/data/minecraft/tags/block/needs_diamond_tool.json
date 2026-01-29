@@ -2,6 +2,7 @@
   "values": [
     "tutorialmod:topaz_ore_block",
     "tutorialmod:deepslate_topaz_ore_block",
-    "tutorialmod:raw_topaz_block"
+    "tutorialmod:raw_topaz_block",
+    "tutorialmod:pulsar_quartz_block"
   ]
 }

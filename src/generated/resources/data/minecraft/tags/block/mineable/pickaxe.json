@@ -4,6 +4,7 @@
     "tutorialmod:raw_topaz_block",
     "tutorialmod:deepslate_topaz_ore_block",
     "tutorialmod:topaz_ore_block",
-    "tutorialmod:transmogrifier_block"
+    "tutorialmod:transmogrifier_block",
+    "tutorialmod:pulsar_quartz_block"
   ]
 }

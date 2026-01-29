@@ -44,4 +44,36 @@ public class ModTiers {
             return Ingredient.of(ModItems.TOPAZ.get());
         }
     };
+
+    public static final Tier PULSAR_QUARTZ = new Tier() {
+        @Override
+        public int getUses() {
+            return 2000;
+        }
+
+        @Override
+        public float getSpeed() {
+            return 13.0F;
+        }
+
+        @Override
+        public float getAttackDamageBonus() {
+            return 4.0F;
+        }
+
+        @Override
+        public TagKey<Block> getIncorrectBlocksForDrops() {
+            return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
+        }
+
+        @Override
+        public int getEnchantmentValue() {
+            return 26;
+        }
+
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.of(ModItems.PULSAR_QUARTZ.get());
+        }
+    };
 }

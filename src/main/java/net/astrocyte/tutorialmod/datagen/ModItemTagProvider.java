@@ -24,6 +24,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(Items.EMERALD);
+                .add(ModItems.TOPAZ.get());
     }
 }

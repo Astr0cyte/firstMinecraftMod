@@ -57,6 +57,7 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){ //If the player is in the ingredients tab, Topaz is added!
             event.accept(ModItems.UNREFINED_TOPAZ);
             event.accept(ModItems.TOPAZ);
+            event.accept(ModItems.PULSAR_QUARTZ);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
@@ -64,6 +65,7 @@ public class TutorialMod {
             event.accept(ModBlocks.RAW_TOPAZ_BLOCK);
             event.accept(ModBlocks.RADIANT_TOPAZ_BLOCK);
             event.accept(ModBlocks.TRANSMOGRIFIER_BLOCK);
+            event.accept(ModBlocks.PULSAR_QUARTZ_BLOCK);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){

@@ -1,5 +1,6 @@
-// 1.21	2026-01-28T21:12:01.8244979	Loot Tables
+// 1.21	2026-01-29T22:09:22.2940295	Loot Tables
 40449d6b25dc5bda21300a599b17d859a4364458 data/tutorialmod/loot_table/blocks/deepslate_topaz_ore_block.json
+bc3c632e3aa47a374927ef9e297b46fd1725c959 data/tutorialmod/loot_table/blocks/pulsar_quartz_block.json
 23e97fa55fa0447db29885edac76df5c3a9c4301 data/tutorialmod/loot_table/blocks/radiant_topaz_block.json
 4f15616c17b2ed35fcac8f34a9ee58151ba5cf5a data/tutorialmod/loot_table/blocks/raw_topaz_block.json
 a1d98313fa05ee34362e53c6b08aa4d53a27cddb data/tutorialmod/loot_table/blocks/topaz_block.json

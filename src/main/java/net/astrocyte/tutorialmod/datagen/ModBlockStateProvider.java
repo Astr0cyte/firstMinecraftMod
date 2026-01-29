@@ -25,6 +25,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK);
 
         blockWithItem(ModBlocks.TRANSMOGRIFIER_BLOCK);
+
+        blockWithItem(ModBlocks.PULSAR_QUARTZ_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

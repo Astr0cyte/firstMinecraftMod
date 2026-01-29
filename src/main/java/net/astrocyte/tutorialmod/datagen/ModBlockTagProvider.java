@@ -23,7 +23,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_TOPAZ_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK.get())
                 .add(ModBlocks.TOPAZ_ORE_BLOCK.get())
-                .add(ModBlocks.TRANSMOGRIFIER_BLOCK.get());
+                .add(ModBlocks.TRANSMOGRIFIER_BLOCK.get())
+                .add(ModBlocks.PULSAR_QUARTZ_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TRANSMOGRIFIER_BLOCK.get())
@@ -32,6 +33,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TOPAZ_ORE_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK.get())
-                .add(ModBlocks.RAW_TOPAZ_BLOCK.get());
+                .add(ModBlocks.RAW_TOPAZ_BLOCK.get())
+                .add(ModBlocks.PULSAR_QUARTZ_BLOCK.get());
     }
 }

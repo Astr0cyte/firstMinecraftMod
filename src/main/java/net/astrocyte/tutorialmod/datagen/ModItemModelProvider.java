@@ -15,6 +15,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.TOPAZ.get());
         basicItem(ModItems.UNREFINED_TOPAZ.get());
+        basicItem(ModItems.PULSAR_QUARTZ.get());
 
         basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.GLIZZY.get());

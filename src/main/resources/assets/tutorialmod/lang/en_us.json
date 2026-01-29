@@ -1,6 +1,7 @@
 {
   "item.tutorialmod.topaz": "Topaz",
   "item.tutorialmod.unrefined_topaz": "Unrefined Topaz",
+  "item.tutorialmod.pulsar_quartz": "Pulsar Quartz",
 
   "item.tutorialmod.topaz_sword": "Topaz Sword",
   "item.tutorialmod.chisel": "Chisel",
@@ -12,11 +13,14 @@
   "block.tutorialmod.deepslate_topaz_ore_block": "Deepslate Topaz Ore",
   "block.tutorialmod.radiant_topaz_block": "Radiant Topaz",
   "block.tutorialmod.transmogrifier_block": "Transmogrifier Block",
+  "block.tutorialmod.pulsar_quartz_block": "Pulsar Quartz Block",
 
   "creativetab.tutorialmod.topaz_items": "Topaz Items",
   "creativetab.tutorialmod.topaz_blocks": "Topaz Blocks",
   "creativetab.tutorialmod.food_items": "Custom Food",
   "creativetab.tutorialmod.misc_custom_blocks": "Misc Custom Blocks",
+  "creativetab.tutorialmod.pulsar_items": "Pulsar Items",
+  "creativetab.tutorialmod.pulsar_blocks": "Pulsar Blocks",
 
   "tooltip.tutorialmod.topaz_sword": "This sword is incredibly light!",
   "tooltip.tutorialmod.glizzy": "Mmm... Sosidge",

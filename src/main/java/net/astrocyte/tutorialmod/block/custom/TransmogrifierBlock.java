@@ -33,7 +33,7 @@ public class TransmogrifierBlock extends Block {
 
         if(pEntity instanceof ItemEntity itemEntity){
             if(isValidItem(itemEntity.getItem())){
-                itemEntity.setItem(new ItemStack(ModItems.TOPAZ.get(), itemEntity.getItem().getCount()));
+                itemEntity.setItem(new ItemStack(ModItems.PULSAR_QUARTZ.get(), itemEntity.getItem().getCount()));
             }
         }
         super.stepOn(pLevel, pPos, pState, pEntity);

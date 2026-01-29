@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -55,9 +56,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
                 .unlockedBy(getHasName(Items.STICK), has(Items.STICK)).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TRANSMOGRIFIER_BLOCK.get())
+                .pattern("#@#")
+                .pattern("@X@")
+                .pattern("#@#")
+                .define('X', ModItems.TOPAZ.get())
+                .define('@', Items.REDSTONE)
+                .define('#', Blocks.OBSIDIAN)
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
+                .unlockedBy(getHasName(Items.REDSTONE), has(Items.REDSTONE))
+                .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PULSAR_QUARTZ_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.PULSAR_QUARTZ.get())
+                .unlockedBy(getHasName(ModItems.PULSAR_QUARTZ.get()), has(ModItems.PULSAR_QUARTZ.get())).save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOPAZ.get(), 9)
                 .requires(ModBlocks.TOPAZ_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.TOPAZ_BLOCK.get()), has(ModBlocks.TOPAZ_BLOCK.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PULSAR_QUARTZ.get(), 9)
+                .requires(ModBlocks.PULSAR_QUARTZ_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PULSAR_QUARTZ_BLOCK.get()), has(ModBlocks.PULSAR_QUARTZ_BLOCK.get())).save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOPAZ.get(), 6)
                 .requires(ModBlocks.RAW_TOPAZ_BLOCK.get())

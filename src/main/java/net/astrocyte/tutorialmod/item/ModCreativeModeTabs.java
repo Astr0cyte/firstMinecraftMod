@@ -59,6 +59,26 @@ public class ModCreativeModeTabs {
 
                    }).build());
 
+    public static final RegistryObject<CreativeModeTab> PULSAR_ITEMS_TAB = CREATIVE_MODE_TABS.register("pulsar_items_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.PULSAR_QUARTZ.get()))
+                    .title(Component.translatable("creativetab.tutorialmod.pulsar_items"))
+                    .withTabsBefore(MISC_CUSTOM_BLOCKS.getId())
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.PULSAR_QUARTZ.get());
+
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> PULSAR_BLOCKS_TAB = CREATIVE_MODE_TABS.register("pulsar_blocks_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.PULSAR_QUARTZ_BLOCK.get()))
+                    .title(Component.translatable("creativetab.tutorialmod.pulsar_blocks"))
+                    .withTabsBefore(PULSAR_ITEMS_TAB.getId())
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.PULSAR_QUARTZ_BLOCK.get());
+
+                    }).build());
+
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);
     }

@@ -61,6 +61,10 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> PULSAR_QUARTZ_BLOCK = registerBlock("pulsar_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
     // Helper functions for registering blocks:
 
     /**

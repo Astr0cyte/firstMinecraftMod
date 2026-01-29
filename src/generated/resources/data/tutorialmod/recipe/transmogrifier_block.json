@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:obsidian"
+    },
+    "@": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "tutorialmod:topaz"
+    }
+  },
+  "pattern": [
+    "#@#",
+    "@X@",
+    "#@#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:transmogrifier_block"
+  }
+}
