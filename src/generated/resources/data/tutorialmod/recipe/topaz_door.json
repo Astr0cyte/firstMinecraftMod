@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "topaz",
+  "key": {
+    "#": {
+      "item": "tutorialmod:topaz"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "tutorialmod:topaz_door"
+  }
+}

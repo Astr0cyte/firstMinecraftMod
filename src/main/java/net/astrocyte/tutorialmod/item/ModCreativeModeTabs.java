@@ -37,6 +37,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK.get());
                         output.accept(ModBlocks.RADIANT_TOPAZ_BLOCK.get());
 
+                        output.accept(ModBlocks.TOPAZ_STAIRS.get());
+                        output.accept(ModBlocks.TOPAZ_SLAB.get());
+
+                        output.accept(ModBlocks.TOPAZ_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.TOPAZ_BUTTON.get());
+
+                        output.accept(ModBlocks.TOPAZ_FENCE.get());
+                        output.accept(ModBlocks.TOPAZ_FENCE_GATE.get());
+                        output.accept(ModBlocks.TOPAZ_WALL.get());
+
+                        output.accept(ModBlocks.TOPAZ_DOOR.get());
+                        output.accept(ModBlocks.TOPAZ_TRAPDOOR.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> CUSTOM_FOOD_TAB = CREATIVE_MODE_TABS.register("custom_food_tab",

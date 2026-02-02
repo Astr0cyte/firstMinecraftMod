@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "topaz",
+  "ingredients": [
+    {
+      "item": "tutorialmod:topaz"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:topaz_button"
+  }
+}

@@ -35,5 +35,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCK.get())
                 .add(ModBlocks.RAW_TOPAZ_BLOCK.get())
                 .add(ModBlocks.PULSAR_QUARTZ_BLOCK.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.TOPAZ_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.TOPAZ_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.TOPAZ_WALL.get());
     }
 }

@@ -10,12 +10,12 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -64,6 +64,36 @@ public class ModBlocks {
     public static final RegistryObject<Block> PULSAR_QUARTZ_BLOCK = registerBlock("pulsar_quartz_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
+    //STAIRS, SLABS
+    public static final RegistryObject<StairBlock> TOPAZ_STAIRS = registerBlock("topaz_stairs",
+            () -> new StairBlock(ModBlocks.TOPAZ_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<SlabBlock> TOPAZ_SLAB = registerBlock("topaz_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    //PRESSURE PLATE, BUTTON
+    public static final RegistryObject<PressurePlateBlock> TOPAZ_PRESSURE_PLATE = registerBlock("topaz_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<ButtonBlock> TOPAZ_BUTTON = registerBlock("topaz_button",
+            () -> new ButtonBlock(BlockSetType.IRON, 20, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    //FENCE, FENCE GATE, WALL
+    public static final RegistryObject<FenceBlock> TOPAZ_FENCE = registerBlock("topaz_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<FenceGateBlock> TOPAZ_FENCE_GATE = registerBlock("topaz_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<WallBlock> TOPAZ_WALL= registerBlock("topaz_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    //DOOR, TRAPDOOR
+    public static final RegistryObject<DoorBlock> TOPAZ_DOOR = registerBlock("topaz_door",
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noOcclusion()));
+    public static final RegistryObject<TrapDoorBlock> TOPAZ_TRAPDOOR = registerBlock("topaz_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noOcclusion()));
 
     // Helper functions for registering blocks:
 

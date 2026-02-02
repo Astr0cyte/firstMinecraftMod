@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorialmod:block/topaz_slab"
+    },
+    "type=double": {
+      "model": "tutorialmod:block/topaz_block"
+    },
+    "type=top": {
+      "model": "tutorialmod:block/topaz_slab_top"
+    }
+  }
+}

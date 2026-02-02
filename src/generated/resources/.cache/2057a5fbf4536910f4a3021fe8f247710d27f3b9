@@ -1,7 +1,11 @@
-// 1.21	2026-01-29T22:15:18.4332319	Item Models: tutorialmod
+// 1.21	2026-02-02T14:30:42.1904405	Item Models: tutorialmod
 69a45d9eda7fcbbb46f3a4bf568243a7b2141123 assets/tutorialmod/models/item/chisel.json
 0bdd1006e821442a95963c06fca0a059a8f2887c assets/tutorialmod/models/item/glizzy.json
 8d8696d7e43153031ad1b1761b0c716e994ac43c assets/tutorialmod/models/item/pulsar_quartz.json
 6cca5ce3885a1e1e448c49dc9140e7d0f45b3df1 assets/tutorialmod/models/item/topaz.json
+61e6301c2cc0a53fc1467f37ed0d862baea7b714 assets/tutorialmod/models/item/topaz_button.json
+1c17b923fb8c606897b0455947771d533ff06e3e assets/tutorialmod/models/item/topaz_door.json
+b8699c5d00c0e9ddd64016803bbab54d66544fe1 assets/tutorialmod/models/item/topaz_fence.json
 78d173186d7e0c567356e97ca75a45f979ebb214 assets/tutorialmod/models/item/topaz_sword.json
+5c7ae709639ebe70f5a34f27235005b1827c7436 assets/tutorialmod/models/item/topaz_wall.json
 add2880aca5d5b7adff50c15648071ac1260a5c2 assets/tutorialmod/models/item/unrefined_topaz.json

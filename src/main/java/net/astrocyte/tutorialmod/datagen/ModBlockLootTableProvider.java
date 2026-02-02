@@ -30,9 +30,25 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate(){
         dropSelf(ModBlocks.TOPAZ_BLOCK.get());
         dropSelf(ModBlocks.RAW_TOPAZ_BLOCK.get());
+
         dropSelf(ModBlocks.TRANSMOGRIFIER_BLOCK.get());
         dropSelf(ModBlocks.RADIANT_TOPAZ_BLOCK.get());
         dropSelf(ModBlocks.PULSAR_QUARTZ_BLOCK.get());
+
+        dropSelf(ModBlocks.TOPAZ_STAIRS.get());
+        this.add(ModBlocks.TOPAZ_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.TOPAZ_SLAB.get()));
+
+        dropSelf(ModBlocks.TOPAZ_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.TOPAZ_BUTTON.get());
+
+        dropSelf(ModBlocks.TOPAZ_FENCE.get());
+        dropSelf(ModBlocks.TOPAZ_FENCE_GATE.get());
+        dropSelf(ModBlocks.TOPAZ_WALL.get());
+
+        dropSelf(ModBlocks.TOPAZ_TRAPDOOR.get());
+        this.add(ModBlocks.TOPAZ_DOOR.get(),
+                block -> createDoorTable(ModBlocks.TOPAZ_DOOR.get()));
 
         this.add(ModBlocks.TOPAZ_ORE_BLOCK.get(),
                 block -> createOreDrop(ModBlocks.TOPAZ_ORE_BLOCK.get(), ModItems.UNREFINED_TOPAZ.get()));

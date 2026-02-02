@@ -66,6 +66,19 @@ public class TutorialMod {
             event.accept(ModBlocks.RADIANT_TOPAZ_BLOCK);
             event.accept(ModBlocks.TRANSMOGRIFIER_BLOCK);
             event.accept(ModBlocks.PULSAR_QUARTZ_BLOCK);
+
+            event.accept(ModBlocks.TOPAZ_STAIRS.get());
+            event.accept(ModBlocks.TOPAZ_SLAB.get());
+
+            event.accept(ModBlocks.TOPAZ_PRESSURE_PLATE.get());
+            event.accept(ModBlocks.TOPAZ_BUTTON.get());
+
+            event.accept(ModBlocks.TOPAZ_FENCE.get());
+            event.accept(ModBlocks.TOPAZ_FENCE_GATE.get());
+            event.accept(ModBlocks.TOPAZ_WALL.get());
+
+            event.accept(ModBlocks.TOPAZ_DOOR.get());
+            event.accept(ModBlocks.TOPAZ_TRAPDOOR.get());
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){

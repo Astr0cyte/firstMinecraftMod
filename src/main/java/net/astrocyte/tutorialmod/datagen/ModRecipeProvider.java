@@ -91,5 +91,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ModItems.UNREFINED_TOPAZ.get()), RecipeCategory.MISC, ModItems.TOPAZ.get(), 1)
                 .unlockedBy(getHasName(ModItems.UNREFINED_TOPAZ.get()), has(ModItems.UNREFINED_TOPAZ.get()))
                 .save(pRecipeOutput, TutorialMod.MOD_ID + ":topaz_from_stonecutting_unrefined_topaz");
+
+        stairBuilder(ModBlocks.TOPAZ_STAIRS.get(), Ingredient.of(ModItems.TOPAZ.get())).group("topaz")
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TOPAZ_SLAB.get(), ModItems.TOPAZ.get());
+
+        buttonBuilder(ModBlocks.TOPAZ_BUTTON.get(), Ingredient.of(ModItems.TOPAZ.get())).group("topaz")
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.TOPAZ_PRESSURE_PLATE.get(), ModItems.TOPAZ.get());
+
+        fenceBuilder(ModBlocks.TOPAZ_FENCE.get(), Ingredient.of(ModItems.TOPAZ.get())).group("topaz")
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.TOPAZ_FENCE_GATE.get(), Ingredient.of(ModItems.TOPAZ.get())).group("topaz")
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TOPAZ_WALL.get(), ModItems.TOPAZ.get());
+
+        doorBuilder(ModBlocks.TOPAZ_DOOR.get(), Ingredient.of(ModItems.TOPAZ.get())).group("topaz")
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.TOPAZ_TRAPDOOR.get(), Ingredient.of(ModItems.TOPAZ.get())).group("topaz")
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get())).save(pRecipeOutput);
     }
 }
